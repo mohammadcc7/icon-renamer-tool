@@ -77,7 +77,7 @@ class IconRenamerApp:
 
         try:
             genai.configure(api_key=api_key)
-            model = genai.GenerativeModel('gemini-1.5-flash')
+            model = genai.GenerativeModel('gemini-2.5-flash')
         except Exception as e:
             messagebox.showerror("خطأ في الاتصال", f"تعذر الاتصال بـ Gemini API: {e}")
             return
